@@ -31,6 +31,7 @@ Hàm sigmoid ánh xạ giá trị dự đoán của mô hình vào khoảng \([0
 
 <img src="./assets/CT11.png">  
 
+
 2. **Regularization**: Để tránh hiện tượng overfitting, thuật toán Logistic Regression tích hợp hai loại regularization:  
    - **L1 regularization**: Làm giảm số lượng trọng số không cần thiết (sparse model).  
    - **L2 regularization**: Làm giảm độ lớn của các trọng số, giúp mô hình ổn định hơn.
