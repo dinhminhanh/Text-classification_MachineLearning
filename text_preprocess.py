@@ -7,7 +7,7 @@ import numpy as np
 
 data_path = "json"  # Thư mục chứa các file JSON
 stopword_path = "vietnamese-stopwords.txt"  # File chứa danh sách từ dừng
-def preprocess(data_path, stopword_path, dims=4096):
+def preprocess(data_path, stopword_path, dims=1000):
     data = []
     target = []
     target_names = []
