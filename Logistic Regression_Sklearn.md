@@ -1,6 +1,4 @@
-Dưới đây là nội dung giới thiệu **Logistic Regression** theo cấu trúc bạn cung cấp:
 
----
 
 # Thuật toán Logistic Regression dùng trong Text Classification với thư viện Scikit-learn  
 
@@ -24,19 +22,14 @@ Tại sao chọn thư viện Scikit-learn để giải quyết bài toán này?
 
 Logistic Regression hoạt động dựa trên hàm sigmoid (logistic function):  
 
-\[
-h_\theta(x) = \frac{1}{1 + e^{-\theta^T x}}
-\]
-
+<img src="./assets/CT10.png">  
 Hàm sigmoid ánh xạ giá trị dự đoán của mô hình vào khoảng \([0, 1]\), từ đó chuyển đổi bài toán dự đoán tuyến tính thành bài toán phân loại.
 
 ### 2.2. Thành phần chính  
 
 1. **Hàm mục tiêu (Loss Function)**: Logistic Regression sử dụng hàm mất mát log-likelihood:  
 
-\[
-L(\theta) = -\frac{1}{m} \sum_{i=1}^m \left[ y^{(i)} \log(h_\theta(x^{(i)})) + (1 - y^{(i)}) \log(1 - h_\theta(x^{(i)})) \right]
-\]
+<img src="./assets/CT11.png">  
 
 2. **Regularization**: Để tránh hiện tượng overfitting, thuật toán Logistic Regression tích hợp hai loại regularization:  
    - **L1 regularization**: Làm giảm số lượng trọng số không cần thiết (sparse model).  
