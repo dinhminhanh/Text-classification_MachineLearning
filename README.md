@@ -1,4 +1,4 @@
-# Phân loại văn bản với PCA và Naive Bayes
+# Phân loại văn bản với PCA và Naive Bayes, SVM, Logistic Regression
 
 Dự án này minh họa cách thực hiện phân loại văn bản sử dụng các kỹ thuật học máy, bao gồm tiền xử lý văn bản, giảm chiều với PCA (Phân tích Thành phần Chính), và huấn luyện mô hình phân loại Naive Bayes.
 ## Mục lục
@@ -39,10 +39,11 @@ Dữ liệu văn bản thô được xử lý qua các bước sau:
 - Giảm chiều dữ liệu: Áp dụng PCA để giảm số chiều của các vector TF-IDF, giúp giảm độ phức tạp và tăng hiệu quả huấn luyện mô hình.
 
 ## Mô hình
-Mô hình phân loại sử dụng Naive Bayes, có thể sử dụng hai phiên bản khác nhau tùy theo tính chất của dữ liệu:
+Mô hình phân loại sử dụng các thuật toán phù hợp với đặc điểm và tính chất của dữ liệu:
 
-- Naive Bayes Gaussian (GaussianNB): Phù hợp với dữ liệu liên tục, chẳng hạn như phân phối xác suất của các từ trong văn bản.
-
+- Naive Bayes Gaussian (GaussianNB): Thích hợp cho dữ liệu liên tục, chẳng hạn như các trường hợp phân phối xác suất của các đặc trưng trong dữ liệu.
+- Hồi quy Logistic (Logistic Regression): Là một mô hình phân loại tuyến tính, phù hợp để xử lý cả dữ liệu nhị phân và đa lớp, đồng thời có thể áp dụng tốt cho cả dữ liệu liên tục và rời rạc.
+- Máy vector hỗ trợ (Support Vector Machine - SVM): Phù hợp cho cả bài toán phân loại tuyến tính và phi tuyến tính. SVM sử dụng siêu phẳng để phân tách các lớp dữ liệu và có thể mở rộng với các hàm kernel (như RBF, polynomial) để xử lý dữ liệu phức tạp.
 ## Chạy chương trình
  ``` bash
 python main.py
